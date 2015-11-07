@@ -45,7 +45,7 @@ def read_file(filename, is_json=False):
 				f = lzma.open(filename,'rt')
 				content = f.read()
 		except Exception as e:
-			logging.error("File \"%s\" cannot be opened: %s", filename, e)
+			logging.error("File \"%s\" cannot be opened or read: %s", filename, e)
 			sys.exit(1)
 		finally:
 			if f is not None:
