@@ -17,6 +17,7 @@ limitations under the License.
 """
 
 import sys
+import os
 import json
 import shutil
 
@@ -42,16 +43,17 @@ USAGE: ./add_poem.py JSON_DELTA_FILE_PATH
 	""")
 	sys.exit(1)
 
+conf_file = os.path.join("..","poems","poems.json")
 # reads old configuration file and new content
-content = read_file("../poems/poems.json")
+content = read_file(conf_file)
 new_content = read_file(sys.argv[1])
 # merge the values
 content.update(new_content)
 # write file
-shutil.copyfile("../poems/poems.json", "../poems/poems.json.bak")
+shutil.copyfile(conf_file, conf_file + ".bak")
 f = None
 try:
-	f = open("../poems/poems.json",'w')
+	f = open(conf_file,'w')
 	json.dump(content, f)
 except Exception as e:
 	print("File \"%s\" cannot be opened or written: %s", filename, e)
