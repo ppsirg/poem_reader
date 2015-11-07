@@ -1,0 +1,31 @@
+{
+	"Divina Commedia":{
+		"author":"Dante Alighieri",
+		"language": "Italian",
+		"folder":"Divina_Commedia",
+		"chapters":[
+			"Inferno",
+			"Purgatorio",
+			"Paradiso"
+		],
+		"Inferno": "inferno.txt.xz",
+		"Purgatorio": "purgatorio.txt.xz",
+		"Paradiso": "paradiso.txt.xz",
+		"separator" : "CANTO"
+	},
+	"Divine Comedy":{
+		"author":"Dante Alighieri",
+		"language": "English",
+		"translator": "Henry Wadsworth Longfellow",
+		"folder":"Divine_Comedy",
+		"chapters":[
+			"Hell",
+			"Purgatory",
+			"Paradise"
+		],
+		"Hell": "hell.txt.xz",
+		"Purgatory": "purgatory.txt.xz",
+		"Paradise": "paradise.txt.xz",
+		"separator" : "CANTO"
+	}
+}

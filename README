@@ -1,0 +1,10 @@
+
+A simple Poem Reader GUI application written in Python using PyGObject.
+
+In the deafult application, two poems are present:
+- Divina Commedia (Italian)
+- Divine Comedy (English, translated by Longfellow)
+
+The included poems are in the public domain.
+
+In the header bar, a bookmark can be saved for the current poem. Only one bookmark per poem can be saved.
