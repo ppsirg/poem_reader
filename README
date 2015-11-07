@@ -1,7 +1,7 @@
 
 A simple Poem Reader GUI application written in Python using PyGObject.
 
-In the deafult application, two poems are present:
+In the default application, two poems are present:
 - Divina Commedia (Italian)
 - Divine Comedy (English, translated by Longfellow)
 
