@@ -25,7 +25,7 @@ counting = False
 
 if len(sys.argv) is not 2:
 	print("""
-USAGE: ./add_line_numbers.py FILENAME_IN > FILENAME_OUT
+USAGE: ./remove_empty_lines.py FILENAME_IN > FILENAME_OUT
 	""")
 	sys.exit(1)
 
@@ -36,7 +36,7 @@ with open(sys.argv[1]) as f:
 		# read a line
 		line_s = line.strip()
 
-		# empty line, written if not inside the poem
+		# empty line
 		if line_s == "":
 			if not counting:
 				print()
@@ -50,8 +50,5 @@ with open(sys.argv[1]) as f:
 			continue
 
 		# updates counter, printed every 3 lines
-		counter += 1
 		print(line_s)
-		if counter % 3 == 0:
-			print ("\t\t\t\t\t\t\t(" + str(counter) + ")")
-			counting = True
+		counting = True
