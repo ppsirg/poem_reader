@@ -1,4 +1,6 @@
 
+This is a proof of concept for a GUI using GTK libraries.
+
 # Poem Reader
 
 A simple Poem Reader GUI application written in Python using PyGObject.
